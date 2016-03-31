@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9277E6EA-177B-4816-A599-1C2837B75FA1}</ProjectGuid>
+    <ProjectGuid>{C70B28FE-CAEB-4C68-9518-5EF739E13EC4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Calc1HostSideAdapter</RootNamespace>
-    <AssemblyName>Calc1HostSideAdapter</AssemblyName>
+    <RootNamespace>AddInCalcV2</RootNamespace>
+    <AssemblyName>AddInCalcV2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\CalculatorApp\Pipeline\HostSideAdapters\</OutputPath>
+    <OutputPath>..\CalculatorApp\Pipeline\AddIns\CalcV2\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,18 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorContractToViewHostSideAdapter.cs" />
+    <Compile Include="SampleV2AddIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calc1Contract\Calc1Contract.csproj">
-      <Project>{fad736ef-5172-4630-8cbc-b70780dfe941}</Project>
-      <Name>Calc1Contract</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Calc1HVA\Calc1HVA.csproj">
-      <Project>{ad0853fc-a5e9-4816-8324-4e4dce107a38}</Project>
-      <Name>Calc1HVA</Name>
+    <ProjectReference Include="..\Calc2AddInView\Calc2AddInView.csproj">
+      <Project>{71d59aff-7e71-42e0-b918-d7c682eb9191}</Project>
+      <Name>Calc2AddInView</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

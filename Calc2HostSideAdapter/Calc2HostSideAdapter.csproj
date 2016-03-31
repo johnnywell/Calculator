@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9277E6EA-177B-4816-A599-1C2837B75FA1}</ProjectGuid>
+    <ProjectGuid>{0493CA8A-DAC8-40C0-B0E6-24BA00D85781}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Calc1HostSideAdapter</RootNamespace>
-    <AssemblyName>Calc1HostSideAdapter</AssemblyName>
+    <RootNamespace>Calc2HostSideAdapter</RootNamespace>
+    <AssemblyName>Calc2HostSideAdapter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,14 +46,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calc1Contract\Calc1Contract.csproj">
-      <Project>{fad736ef-5172-4630-8cbc-b70780dfe941}</Project>
-      <Name>Calc1Contract</Name>
+    <ProjectReference Include="..\Calc2Contract\Calc2Contract.csproj">
+      <Project>{54beaf76-26ec-4f0f-8473-5d9c118cdc79}</Project>
+      <Name>Calc2Contract</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Calc1HVA\Calc1HVA.csproj">
-      <Project>{ad0853fc-a5e9-4816-8324-4e4dce107a38}</Project>
-      <Name>Calc1HVA</Name>
+    <ProjectReference Include="..\Calc2HVA\Calc2HVA.csproj">
+      <Project>{5f5575e3-98af-4cdc-8613-938b3634e966}</Project>
+      <Name>Calc2HVA</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

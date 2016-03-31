@@ -42,7 +42,7 @@ namespace MathHost
                 return null;
             }
 
-            Console.WriteLine("Available Calculators");
+            Console.WriteLine("Available Calculators:");
 
             // Show the token properties for each token in the AddInToken collection
             // (tokens), preceded by the add-in number in [] brackets.
@@ -131,7 +131,7 @@ namespace MathHost
         private double a;
         private double b;
         private string action;
-
+        
         internal Parser(string line)
         {
             string[] parts = line.Split(' ');

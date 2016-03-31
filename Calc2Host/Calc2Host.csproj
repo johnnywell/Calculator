@@ -4,24 +4,27 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9277E6EA-177B-4816-A599-1C2837B75FA1}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{C9C412C4-EF71-4E59-84A4-5AF4C4760945}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Calc1HostSideAdapter</RootNamespace>
-    <AssemblyName>Calc1HostSideAdapter</AssemblyName>
+    <RootNamespace>Calc2Host</RootNamespace>
+    <AssemblyName>Calc2Host</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\CalculatorApp\Pipeline\HostSideAdapters\</OutputPath>
+    <OutputPath>..\CalculatorApp\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.AddIn" />
-    <Reference Include="System.AddIn.Contract" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,18 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorContractToViewHostSideAdapter.cs" />
+    <Compile Include="MathHost2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calc1Contract\Calc1Contract.csproj">
-      <Project>{fad736ef-5172-4630-8cbc-b70780dfe941}</Project>
-      <Name>Calc1Contract</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Calc1HVA\Calc1HVA.csproj">
-      <Project>{ad0853fc-a5e9-4816-8324-4e4dce107a38}</Project>
-      <Name>Calc1HVA</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calc2HVA\Calc2HVA.csproj">
+      <Project>{5f5575e3-98af-4cdc-8613-938b3634e966}</Project>
+      <Name>Calc2HVA</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

@@ -4,7 +4,7 @@ namespace CalcAddInViews
 {
     // The AddInBaseAttribute identifies this interface as the basis for
     // the add-in view pipeline segment.
-    [AddInBase()]
+    [AddInBase]
     public interface ICalculator
     {
         double Add(double a, double b);
